@@ -28,6 +28,8 @@ JavaScript
 Light Mode:
 
 <img width="266" height="400" alt="Screenshot 2026-06-07 150621" src="https://github.com/user-attachments/assets/ef794eec-adf0-49f3-8a3a-10d3c9761dbb" />
+
+
 Dark Mode:
 
 <img width="274" height="376" alt="Screenshot 2026-06-07 151208" src="https://github.com/user-attachments/assets/e535c2fc-0e85-4e37-b2a2-2033abefe05a" />
