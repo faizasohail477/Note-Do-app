@@ -7,14 +7,23 @@ A cozy, aesthetic, and fully functional To-Do List web application designed to h
 https://noteanddo.netlify.app/
 
 ✨ Features
+
 🌅 Daily Inspiration: Displays a random motivational quote every time you refresh the app.
+
 🎨 Premium Aesthetics: Solid "Warm Mocha & Sage" color palette designed for visual comfort.
+
 🌓 Dark/Light Mode: Smooth toggle between a cozy Light theme and a premium Dark Charcoal theme.
+
 📅 Date & Reminders: Set specific due dates for tasks. The app sends a browser notification when the time arrives.
+
 ✍️ Tap & Hold to Edit: Long-press on any task text to edit it instantly.
+
 💾 Auto-Save: All your tasks, settings, and theme preferences are saved automatically in your browser's Local Storage.
+
 🏷️ Smart Categories: Organize notes into Personal, Work, Study, Ideas, or Urgent.
+
 🔍 Search & Filter: Quickly find tasks by text or filter them by category.
+
 📊 Progress Tracking: Visual progress bar to keep track of your daily accomplishments.
 
 🛠️ Tech Stack
