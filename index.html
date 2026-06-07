@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Note & Do — Plan your day</title>
+  <meta name="description" content="A cozy notebook-inspired to-do list with dates, reminders, and warm vibes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;500;600;700&display=swap" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div>
+        <h1>Note <span class="accent">&</span> Do</h1>
+        <p class="sub">your thoughts, softly preserved.</p>
+      </div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <section class="quote paper shadow-paper" id="quoteCard">
+      <h4 class="quote-title">Today's Note</h4>
+      <p class="quote-text" id="quoteText">Loading inspiration...</p>
+    </section>
+
+    <form id="addForm" class="add">
+      <input id="taskInput" type="text" placeholder="Write a new note..." maxlength="200" autocomplete="off" required />
+      <input id="dateInput" type="datetime-local" aria-label="Due Date" />
+      <select id="categorySelect" aria-label="Category">
+        <option value="personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="study">Study</option>
+        <option value="ideas">Ideas</option>
+        <option value="urgent">Urgent</option>
+      </select>
+      <button type="submit" class="btn-primary">Add</button>
+    </form>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search notes…" />
+      <div class="filters" id="filters">
+        <button data-filter="all" class="chip active">All</button>
+        <button data-filter="personal" class="chip">Personal</button>
+        <button data-filter="work" class="chip">Work</button>
+        <button data-filter="study" class="chip">Study</button>
+        <button data-filter="ideas" class="chip">Ideas</button>
+        <button data-filter="urgent" class="chip">Urgent</button>
+      </div>
+    </div>
+
+    <section class="progress">
+      <div class="progress-row">
+        <span>Daily Progress</span>
+        <span id="progressText">0/0</span>
+      </div>
+      <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+    </section>
+
+    <h2 class="section-title">Pending Notes</h2>
+    <ul id="pendingList" class="list"></ul>
+    <div id="emptyPending" class="empty hidden">
+      <p>No tasks yet — Your notebook is clean. ✨</p>
+    </div>
+
+    <h2 class="section-title muted">Completed Pages</h2>
+    <ul id="doneList" class="list done-list"></ul>
+
+    <footer class="foot">~ pages of your everyday life ~</footer>
+  </main>
+  
+  <div id="toast">Notifications enabled! 🔔</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
